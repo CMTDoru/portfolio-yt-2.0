@@ -10,6 +10,19 @@ const Home: NextPage = () => {
       </Head>
 
       <h1 className="p-10 text-red-500">Lets build an AWESOME portfolio</h1>
+      {/* Header */}
+
+      {/* Hero */}
+
+      {/* About */}
+
+      {/* Experience */}
+
+      {/* Skills */}
+
+      {/* Projects */}
+
+      {/* Contact Me */}
     </div>
   );
 };
