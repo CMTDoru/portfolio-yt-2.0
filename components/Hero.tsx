@@ -1,9 +1,8 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import Image from "next/image";
-import MeImage from "../public/IMG_20190402_155552.jpg";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -20,15 +19,11 @@ export default function Hero({}: Props) {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <div className="relative h-32 w-32">
-        <Image
-          className="rounded-full"
-          layout="fill"
-          objectFit="cover"
-          src={MeImage}
-          alt="Me"
-        />
-      </div>
+      <motion.img
+        className="relative rounded-full h-32 w-32 mx-auto object-cover"
+        src="/IMG_20190402_155552.jpg"
+        alt="Me"
+      />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           Software Engineer
